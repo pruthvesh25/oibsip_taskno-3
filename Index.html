@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Style.css" />
+        <title>
+            Temperature Converter
+        </title>
+    </head>
+
+
+<!--Link to Js File-->
+<script src="file.js"> </script>
+
+
+
+<body>
+
+
+    <h2 >Temperature Converter  </h2>
+    <form class="format" onsubmit="calculateTemp();return false">
+         <div class="put_in">
+            <label for="temp"> Value   : </label>
+                <input type="float" class="temp" id="temp">
+                <br>
+         </div>
+
+
+        <div class = "input">
+            <label for="unit" class="type">Type :</label>
+            <select name="temp_diff" id="temp_diff" class="unit">
+                <option value="cel" >&#176;Celsius</option>
+                <option value="fah">&#176;Fahrenheit</option>
+            </select><br>
+        </div>
+
+       
+        
+        <div class="button">
+            <button type="submit"  class="click" >CONVERT</button>
+            <span id="result"></span>
+            <br/>
+        </div>
+
+        <div class="reload">
+             <input type="button" value="Reload" onClick="window.location.reload(true)">
+        </div>
+      
+    </form>
+</body>
+</html>
